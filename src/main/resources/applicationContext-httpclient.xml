@@ -9,7 +9,7 @@
 
 	<!-- 使用spring自带的占位符替换功能 -->
 	<bean
-		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" destroy-method="close">
 		<!-- 允许JVM参数覆盖 -->
 		<!-- java -Djdbc.url=123 -jar xxx.jar -->
 		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
