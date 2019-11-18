@@ -128,7 +128,7 @@ public class ApiService implements BeanFactoryAware {
      * 带有json参数的POST请求
      * 
      * @param url
-     * @param params
+     * @param json
      * @return
      * @throws ClientProtocolException
      * @throws IOException
